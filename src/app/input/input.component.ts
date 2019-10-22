@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Input} from '../input';
-import {Hero} from "../hero";
+import {Hero} from '../hero';
 
 @Component({
   selector: 'app-input',
@@ -20,7 +19,7 @@ export class InputComponent implements OnInit {
   ngOnInit() {
   }
 
-  onChange():void{
+  onChange(): void {
     console.log(this.hero.name);
   }
 
