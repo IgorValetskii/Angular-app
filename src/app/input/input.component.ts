@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Input} from '../input';
+import {Hero} from "../hero";
 
 @Component({
   selector: 'app-input',
@@ -8,11 +9,9 @@ import {Input} from '../input';
 })
 export class InputComponent implements OnInit {
 
-  hero: Input = {
+  hero: Hero = {
     id: 1,
-    name: 'Windstorm',
-   console(text: string): any {
-   }
+    name: 'Windstorm'
   };
 
   constructor() {
@@ -20,4 +19,9 @@ export class InputComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  onChange():void{
+    console.log(this.hero.name);
+  }
+
 }
